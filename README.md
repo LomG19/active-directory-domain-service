@@ -1,7 +1,5 @@
 Prepared by MUGISHA Loic
 
-# AD Homelab README
-
 # Active Directory Homelab – Windows Server 2025
 
 ## Project Overview
