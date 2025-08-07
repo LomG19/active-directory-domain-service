@@ -101,12 +101,6 @@ These issues gave me good hands-on experience in diagnosing and resolving Active
 
 ---
 
-## Screenshots / Demo
-
-*Coming soon: I’ll upload screenshots of GPOs, OU structure, DHCP setup, and folder permissions.*
-
----
-
 ## What I Learned
 
 This lab helped me better understand the day-to-day responsibilities of a Windows sysadmin. Working with GPOs, designing OUs, and practicing permission control gave me a lot of insight into managing users and computers in a domain environment. Troubleshooting real issues like login failures and domain join problems made it even more valuable.
