@@ -25,14 +25,14 @@ This is a hands-on homelab project where I set up a secure and functional Active
 ### Group Policy Configuration (GPO)
 
 - Set up strong password policies (complexity, age, length).
-- Configured **account lockout threshold** to protect against brute force attacks.
+- Configured **account lockout threshold** to protect against brute force attacks. ![Account_lockout](screenshots/Lockout.png)
 - Enforced auto screen lock and idle time limits.
 - Blocked access to the Control Panel and USBs for standard users.
 
 ### Customization via GPO
 
-- Deployed a custom desktop wallpaper to all domain users.
-- Pushed out **Google Chrome** silently to domain clients via GPO.
+- Deployed a custom desktop wallpaper to all domain users. ![Deployed Wallpaper](screenshots/Custom_wallpaper.png)
+- Pushed out **Google Chrome** silently to domain clients via GPO. ![Deployed Wallpaper](screenshots/Chrome_pushed.png)
 
 ### Organizational Unit (OU) Structure
 
@@ -53,7 +53,7 @@ Applied GPOs at the OU level to ensure specific policy application.
 
 ### Logon Hours
 
-- Configured logon hours for Staff users to restrict access to weekdays only, and the organization's working hours (9-5 pm).
+- Configured logon hours for Staff users to restrict access to weekdays only, and the organization's working hours (9-5 pm). ![Logon_hours](screenshots/Logon_hours.png)
 - Enforced auto-logoff for idle remote desktop sessions.
 
 ### Delegation of Control
