@@ -1,14 +1,16 @@
+Prepared by MUGISHA Loic
+
 # AD Homelab README
 
-# 🏠 Active Directory Homelab – Windows Server 2025
+# Active Directory Homelab – Windows Server 2025
 
-## 🔧 Project Overview
+## Project Overview
 
 This is a hands-on homelab project where I set up a secure and functional Active Directory (AD) environment using **Windows Server 2025** as the Domain Controller and two Windows 10 clients. The goal was to simulate a real-world IT infrastructure that includes proper Group Policy configurations, user access control, software deployment, and delegation practices. I also got to troubleshoot common AD issues along the way.
 
 ---
 
-## 🖥️ Homelab Infrastructure
+## Homelab Infrastructure
 
 | Component | Details |
 | --- | --- |
@@ -20,21 +22,21 @@ This is a hands-on homelab project where I set up a secure and functional Active
 
 ---
 
-## 🧱 Key Implementations
+## Key Implementations
 
-### 🔐 Group Policy Configuration (GPO)
+### Group Policy Configuration (GPO)
 
 - Set up strong password policies (complexity, age, length).
 - Configured **account lockout threshold** to protect against brute force attacks.
 - Enforced auto screen lock and idle time limits.
 - Blocked access to the Control Panel and USBs for standard users.
 
-### 🖼️ Customization via GPO
+### Customization via GPO
 
 - Deployed a custom desktop wallpaper to all domain users.
 - Pushed out **Google Chrome** silently to domain clients via GPO.
 
-### 🧑‍🤝‍🧑 Organizational Unit (OU) Structure
+### Organizational Unit (OU) Structure
 
 Created three OUs to organize users and apply policies cleanly:
 - `Management`
@@ -43,7 +45,7 @@ Created three OUs to organize users and apply policies cleanly:
 
 Applied GPOs at the OU level to ensure specific policy application.
 
-### 📂 Role-Based Access & Shared Folders
+### Role-Based Access & Shared Folders
 
 - Created shared folders with NTFS permissions to control access:
     - Management-only access
@@ -51,12 +53,12 @@ Applied GPOs at the OU level to ensure specific policy application.
     - Full control for IT Support
 - Used ACLs to fine-tune access and blocked inheritance where needed.
 
-### ⌚ Logon Hours
+### Logon Hours
 
 - Configured logon hours for Staff users to restrict access to weekdays only, and the organization's working hours (9-5 pm).
 - Enforced auto-logoff for idle remote desktop sessions.
 
-### 🧑‍💼 Delegation of Control
+### Delegation of Control
 
 - Delegated control of the other OU to an `IT Support` user with specific permissions:
     - Reset passwords
@@ -65,7 +67,7 @@ Applied GPOs at the OU level to ensure specific policy application.
     - Add or remove from a group
 - Used the Delegation Wizard and followed least privilege principles.
 
-### 📡 DHCP and Network Setup
+### DHCP and Network Setup
 
 - Set up DHCP with:
     - IP scopes and reservations
@@ -74,7 +76,7 @@ Applied GPOs at the OU level to ensure specific policy application.
 
 ---
 
-## 🛠️ Troubleshooting Practice
+## Troubleshooting Practice
 
 During the setup, I encountered and resolved a few common real-world issues:
 
@@ -86,7 +88,7 @@ These issues gave me good hands-on experience in diagnosing and resolving Active
 
 ---
 
-## ✅ Skills Demonstrated
+## Skills Demonstrated
 
 - Active Directory Domain Services (AD DS)
 - Group Policy Management (GPMC)
@@ -101,19 +103,19 @@ These issues gave me good hands-on experience in diagnosing and resolving Active
 
 ---
 
-## 📷 Screenshots / Demo
+## Screenshots / Demo
 
 *Coming soon: I’ll upload screenshots of GPOs, OU structure, DHCP setup, and folder permissions.*
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 This lab helped me better understand the day-to-day responsibilities of a Windows sysadmin. Working with GPOs, designing OUs, and practicing permission control gave me a lot of insight into managing users and computers in a domain environment. Troubleshooting real issues like login failures and domain join problems made it even more valuable.
 
 ---
 
-## 📌 Future Plans
+## Future Plans
 
 - Add WSUS for centralized Windows Update management.
 - Set up NPS for RADIUS authentication.
@@ -121,7 +123,3 @@ This lab helped me better understand the day-to-day responsibilities of a Window
 - Automate account creation and folder provisioning using PowerShell.
 
 ---
-
-## 📎 License
-
-This project is shared for learning and portfolio purposes only.
