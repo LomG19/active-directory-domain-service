@@ -37,10 +37,10 @@ This is a hands-on homelab project where I set up a secure and functional Active
 ### Organizational Unit (OU) Structure
 
 Created three OUs to organize users and apply policies cleanly:
-- `Management`
-- `Staff`
-- `IT Support`
-
+- `Apex-Finance`
+- `Apex-HR`
+- `Apex-IT`
+![Organizational Units](screenshots/OU.png)
 Applied GPOs at the OU level to ensure specific policy application.
 
 ### Role-Based Access & Shared Folders
